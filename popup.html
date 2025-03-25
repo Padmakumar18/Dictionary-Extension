@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <script src="popup.js" defer></script>
+    
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            width: 320px; /* Adjust width for a better fit */
+            padding: 15px; 
+            text-align: center;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        h3 { 
+            margin-bottom: 15px; 
+            font-size: 18px;
+        }
+
+        #wordInput { 
+            width: 90%; 
+            padding: 8px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #searchBtn { 
+            margin-top: 10px; 
+            padding: 8px 15px; 
+            cursor: pointer; 
+            border: none; 
+            border-radius: 5px; 
+            background: #007bff; 
+            color: white;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        #searchBtn:hover {
+            background: #0056b3;
+        }
+
+        #result { 
+            margin-top: 15px; 
+            font-size: 14px; 
+            color: #333; 
+            text-align: left; 
+            padding: 10px;
+            border-radius: 5px;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h3><strong>Dictionary Extension</strong></h3>
+    <input type="text" id="wordInput" placeholder="Enter a word">
+    <button id="searchBtn">Search</button>
+    <p id="result"></p>
+</body>
+</html>

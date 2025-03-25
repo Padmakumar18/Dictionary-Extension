@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Dictionary Extension",
+  "version": "1.0",
+  "description": "Highlight a word to see its meaning",
+  "permissions": ["storage", "activeTab", "contextMenus"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
